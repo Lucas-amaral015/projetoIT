@@ -1,0 +1,23 @@
+AQUECEDORES ( 74012, 74013, 74014, 74046 )
+
+
+1. Verificar pressão do manômetro em trabalho(entre 5 a 7 bar).
+
+
+2. Verificar estado de conservação e funcionamento das teclas, LEDs e lâmpadas 
+no painel de comando.
+
+
+3. Verificar estado e funcionamento do botão de emergência.
+OBS: Verificar os 2 botões de emergência.
+
+
+4. Verificar estado e funcionamento do botão bi-manual.
+
+
+5. Verificar estado e funcionamento da cortina de luz.
+
+
+6. Verificar integridade das maçanetas do painel elétrico e presença de cadeado. 
+OBS: Verificar cadeado na máquina (mínimo 1 em portas com múltiplas 
+maçanetas).

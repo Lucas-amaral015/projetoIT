@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.eixointermediario.TelaIntermediario">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="10.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <ImageView fx:id="imageViewer" fitHeight="431.0" fitWidth="490.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></ImageView>
+                  <HBox alignment="CENTER" prefHeight="81.0" prefWidth="400.0" spacing="150.0" VBox.vgrow="NEVER">
+                     <children>
+                        <Button fx:id="btnAnterior" mnemonicParsing="false" onAction="#handleImagemAnterior" text="Anterior" visible="false" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="btnProxima" mnemonicParsing="false" onAction="#handleProximaImagem" text="Próxima" visible="false" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+         <center>
+            <VBox alignment="CENTER" prefHeight="300.0" prefWidth="380.0" spacing="20.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fitToWidth="true" prefHeight="352.0" prefWidth="380.0" style="-fx-background-color: transparent;;" VBox.vgrow="ALWAYS">
+                     <content>
+                        <Label fx:id="textAreaConteudo" textAlignment="JUSTIFY" wrapText="true">
+                           <font>
+                              <Font name="Segoe UI" size="18.0" />
+                           </font>
+                        </Label>
+                     </content>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </ScrollPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <left>
+            <VBox prefHeight="300.0" prefWidth="200.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnIt" mnemonicParsing="false" onAction="#handleIt" prefHeight="25.0" prefWidth="125.0" text="IT" />
+                  <Button fx:id="btnChecklistAquecedor" mnemonicParsing="false" onAction="#handleChecklistAquecedor" prefHeight="25.0" prefWidth="125.0" text="Checklist Aquecedor" />
+                  <Button fx:id="btnChecklistPrensa" mnemonicParsing="false" onAction="#handleChecklistPrensa" prefHeight="25.0" prefWidth="125.0" text="Checklist Prensa" />
+                  <Button fx:id="btnQualityAlert" mnemonicParsing="false" onAction="#handleQualityAlert" prefHeight="25.0" prefWidth="125.0" text="Quality Alert" />
+               </children>
+               <padding>
+                  <Insets top="80.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <top>
+            <Label prefHeight="51.0" prefWidth="368.0" text="EIXO INTERMEDIÁRIO" textAlignment="CENTER" BorderPane.alignment="TOP_CENTER">
+               <font>
+                  <Font name="Algerian" size="35.0" />
+               </font></Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
